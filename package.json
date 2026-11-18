@@ -1,0 +1,21 @@
+{
+  "name": "iot-economics",
+  "version": "1.0.0",
+  "description": "IoT в экономике: учебный проект",
+  "main": "main.js",
+  "author": "Zerox",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win nsis"
+  },
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.zerox.ioteconomics",
+    "productName": "IoT Экономика",
+    "win": { "target": "nsis" },
+    "nsis": { "oneClick": false, "allowToChangeInstallationDirectory": true }
+  }
+}
